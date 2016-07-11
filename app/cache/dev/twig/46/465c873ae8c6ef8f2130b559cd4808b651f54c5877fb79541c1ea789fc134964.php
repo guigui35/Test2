@@ -7,8 +7,8 @@ class __TwigTemplate_ec6cc62c931a1319c79f65315791a1a7d61ca135bc1b691607267b2ce0a
     {
         parent::__construct($env);
 
-        // line 30
-        $this->parent = $this->loadTemplate("guigui35PlatformBundle::layout.html.twig", "guigui35PlatformBundle:Advert:add.html.twig", 30);
+        // line 1
+        $this->parent = $this->loadTemplate("guigui35PlatformBundle::layout.html.twig", "guigui35PlatformBundle:Advert:add.html.twig", 1);
         $this->blocks = array(
             'title' => array($this, 'block_title'),
             'guigui35platform_body' => array($this, 'block_guigui35platform_body'),
@@ -22,53 +22,56 @@ class __TwigTemplate_ec6cc62c931a1319c79f65315791a1a7d61ca135bc1b691607267b2ce0a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_94dbc1de751e7f9059dc57853b8a8a28093a2cc501c267c08901224a2423feb5 = $this->env->getExtension("native_profiler");
-        $__internal_94dbc1de751e7f9059dc57853b8a8a28093a2cc501c267c08901224a2423feb5->enter($__internal_94dbc1de751e7f9059dc57853b8a8a28093a2cc501c267c08901224a2423feb5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "guigui35PlatformBundle:Advert:add.html.twig"));
+        $__internal_e77f47b22f7d202638925695b8eaf0244507a1a0baff721acb89fe960438c81d = $this->env->getExtension("native_profiler");
+        $__internal_e77f47b22f7d202638925695b8eaf0244507a1a0baff721acb89fe960438c81d->enter($__internal_e77f47b22f7d202638925695b8eaf0244507a1a0baff721acb89fe960438c81d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "guigui35PlatformBundle:Advert:add.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_94dbc1de751e7f9059dc57853b8a8a28093a2cc501c267c08901224a2423feb5->leave($__internal_94dbc1de751e7f9059dc57853b8a8a28093a2cc501c267c08901224a2423feb5_prof);
+        $__internal_e77f47b22f7d202638925695b8eaf0244507a1a0baff721acb89fe960438c81d->leave($__internal_e77f47b22f7d202638925695b8eaf0244507a1a0baff721acb89fe960438c81d_prof);
 
     }
 
-    // line 32
+    // line 3
     public function block_title($context, array $blocks = array())
     {
-        $__internal_bf61f76792b20cdb6e95020fb692cea639d91ad33035290050fc8584d491369a = $this->env->getExtension("native_profiler");
-        $__internal_bf61f76792b20cdb6e95020fb692cea639d91ad33035290050fc8584d491369a->enter($__internal_bf61f76792b20cdb6e95020fb692cea639d91ad33035290050fc8584d491369a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_418f3f0bb961f6225c8983dfa10e42eb71f03749372ef3758dad3499aa1bf65b = $this->env->getExtension("native_profiler");
+        $__internal_418f3f0bb961f6225c8983dfa10e42eb71f03749372ef3758dad3499aa1bf65b->enter($__internal_418f3f0bb961f6225c8983dfa10e42eb71f03749372ef3758dad3499aa1bf65b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        // line 33
-        echo "  Ajouter un article - ";
+        // line 4
+        echo "  Ajouter une annonce - ";
         $this->displayParentBlock("title", $context, $blocks);
         echo "
 ";
         
-        $__internal_bf61f76792b20cdb6e95020fb692cea639d91ad33035290050fc8584d491369a->leave($__internal_bf61f76792b20cdb6e95020fb692cea639d91ad33035290050fc8584d491369a_prof);
+        $__internal_418f3f0bb961f6225c8983dfa10e42eb71f03749372ef3758dad3499aa1bf65b->leave($__internal_418f3f0bb961f6225c8983dfa10e42eb71f03749372ef3758dad3499aa1bf65b_prof);
 
     }
 
-    // line 36
+    // line 7
     public function block_guigui35platform_body($context, array $blocks = array())
     {
-        $__internal_baab61166a11c27bc3d3982c02c32bfbe365285ca580d4d6021b0ab00be8157b = $this->env->getExtension("native_profiler");
-        $__internal_baab61166a11c27bc3d3982c02c32bfbe365285ca580d4d6021b0ab00be8157b->enter($__internal_baab61166a11c27bc3d3982c02c32bfbe365285ca580d4d6021b0ab00be8157b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "guigui35platform_body"));
+        $__internal_e9a4fcba38fef544e28ea20844f0ba6c0db4c8e6b0109b28bfce46ce46c6cd3f = $this->env->getExtension("native_profiler");
+        $__internal_e9a4fcba38fef544e28ea20844f0ba6c0db4c8e6b0109b28bfce46ce46c6cd3f->enter($__internal_e9a4fcba38fef544e28ea20844f0ba6c0db4c8e6b0109b28bfce46ce46c6cd3f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "guigui35platform_body"));
 
-        // line 37
+        // line 8
         echo "
-  <h2>Ajouter un article</h2>
+  <h2>Modifier une annonce</h2>
 
   ";
-        // line 40
+        // line 11
         echo twig_include($this->env, $context, "guigui35PlatformBundle:Advert:form.html.twig");
         echo "
 
   <p>
-    Vous ajoutez un nouvel article.
+      Ajouter une annonce
   </p>
 
 ";
+        // line 23
+        echo "
+";
         
-        $__internal_baab61166a11c27bc3d3982c02c32bfbe365285ca580d4d6021b0ab00be8157b->leave($__internal_baab61166a11c27bc3d3982c02c32bfbe365285ca580d4d6021b0ab00be8157b_prof);
+        $__internal_e9a4fcba38fef544e28ea20844f0ba6c0db4c8e6b0109b28bfce46ce46c6cd3f->leave($__internal_e9a4fcba38fef544e28ea20844f0ba6c0db4c8e6b0109b28bfce46ce46c6cd3f_prof);
 
     }
 
@@ -84,52 +87,30 @@ class __TwigTemplate_ec6cc62c931a1319c79f65315791a1a7d61ca135bc1b691607267b2ce0a
 
     public function getDebugInfo()
     {
-        return array (  62 => 40,  57 => 37,  51 => 36,  41 => 33,  35 => 32,  11 => 30,);
+        return array (  71 => 23,  62 => 11,  57 => 8,  51 => 7,  41 => 4,  35 => 3,  11 => 1,);
     }
 }
-/* {#{% extends "guigui35PlatformBundle::layout.html.twig" %}*/
-/* */
-/* {% block title %}*/
-/*     Ajouter une annonce - {{ parent() }}*/
-/* {% endblock %}*/
-/* */
-/* {% block guigui35platform_body %}*/
-/* */
-/*   <h2>Ajouter une annonce</h2>*/
-/* */
-/*   {{ include("guigui35PlatformBundle:Advert:form.html.twig") }}*/
-/* */
-/*   <p>*/
-/*       Vous ajouter une annonce*/
-/*   </p>*/
-/* */
-/*   <p>*/
-/*     <a href="{{ path('guigui35_platform_add', {'id': advert.id}) }}" class="btn btn-default">*/
-/*       <i class="glyphicon glyphicon-chevron-left"></i>*/
-/*       Retour à l'annonce*/
-/*     </a>*/
-/*   </p>*/
-/* */
-/* {% endblock %}*/
-/* */
-/* #}*/
-/* */
-/* {# src/Sdz/BlogBundle/Resources/views/Blog/modifier.html.twig #}*/
-/* */
 /* {% extends "guigui35PlatformBundle::layout.html.twig" %}*/
 /* */
 /* {% block title %}*/
-/*   Ajouter un article - {{ parent() }}*/
+/*   Ajouter une annonce - {{ parent() }}*/
 /* {% endblock %}*/
 /* */
 /* {% block guigui35platform_body %}*/
 /* */
-/*   <h2>Ajouter un article</h2>*/
+/*   <h2>Modifier une annonce</h2>*/
 /* */
 /*   {{ include("guigui35PlatformBundle:Advert:form.html.twig") }}*/
 /* */
 /*   <p>*/
-/*     Vous ajoutez un nouvel article.*/
+/*       Ajouter une annonce*/
 /*   </p>*/
+/* */
+/* {#  <p>*/
+/*     <a href="{{ path('guigui35_platform_view', {'id': advert.id}) }}" class="btn btn-default">*/
+/*       <i class="glyphicon glyphicon-chevron-left"></i>*/
+/*       Retour à l'annonce*/
+/*     </a>*/
+/*   </p>#}*/
 /* */
 /* {% endblock %}*/

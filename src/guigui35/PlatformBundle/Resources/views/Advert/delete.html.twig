@@ -1,0 +1,24 @@
+{% extends "guigui35PlatformBundle::layout.html.twig" %}
+
+{% block title %}
+  Supprimer une annonce - {{ parent() }}
+{% endblock %}
+
+{% block guigui35platform_body %}
+
+  <h2>Supprimer une annonce</h2>
+
+  {{ include("guigui35PlatformBundle:Advert:form.html.twig") }}
+
+  <p>
+      onglet ou on supprime une annonce
+  </p>
+
+  <p>
+    <a href="{{ path('guigui35_platform_view', {'id': advert.id}) }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      Retour à l'annonce
+    </a>
+  </p>
+
+{% endblock %}

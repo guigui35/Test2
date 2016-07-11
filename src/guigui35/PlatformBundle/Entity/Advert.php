@@ -12,6 +12,15 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Advert
 {
+
+  /**
+   * @ORM\OneToOne(targetEntity="guigui35\PlatformBundle\Entity\Image", cascade={"persist"})
+   * @ORM\JoinColumn(nullable=false)
+   */
+  private $image;
+    
+    
+    
     /**
      * @var int
      *
@@ -55,7 +64,11 @@ class Advert
      */
     private $published = true;
     
-
+    public function __construct()
+    {
+      // Par défaut, la date de l'annonce est la date d'aujourd'hui
+      $this->date = new \Datetime();
+    }
 
     /**
      * Get id
@@ -185,5 +198,30 @@ class Advert
     public function getPublished()
     {
         return $this->published;
+    }
+
+
+    /**
+     * Set image
+     *
+     * @param \guigui35\PlatformBundle\Entity\Image $image
+     *
+     * @return Advert
+     */
+    public function setImage(\guigui35\PlatformBundle\Entity\Image $image)
+    {
+        $this->image = $image;
+    
+        return $this;
+    }
+
+    /**
+     * Get image
+     *
+     * @return \guigui35\PlatformBundle\Entity\Image
+     */
+    public function getImage()
+    {
+        return $this->image;
     }
 }

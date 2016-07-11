@@ -26,7 +26,7 @@ guigui35_platform_delete:
     path:      /delete/{id}
     defaults:  { _controller: guigui35PlatformBundle:Advert:delete }
     requirements:
-        id: \
+        id: \d+
 
         
         

@@ -15,8 +15,8 @@ class __TwigTemplate_03fd1c0733cb742417d405481a34255d08a554a913501db61077def6ae8
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_b131c3128b9abdc95922dad4814a161b5a2480d3788b407cb0b797f3017f9580 = $this->env->getExtension("native_profiler");
-        $__internal_b131c3128b9abdc95922dad4814a161b5a2480d3788b407cb0b797f3017f9580->enter($__internal_b131c3128b9abdc95922dad4814a161b5a2480d3788b407cb0b797f3017f9580_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "guigui35PlatformBundle:Advert:form.html.twig"));
+        $__internal_91ba3405e10bbdce016f6fb5c38e539c190e539904564c38b37634eb6ff872cf = $this->env->getExtension("native_profiler");
+        $__internal_91ba3405e10bbdce016f6fb5c38e539c190e539904564c38b37634eb6ff872cf->enter($__internal_91ba3405e10bbdce016f6fb5c38e539c190e539904564c38b37634eb6ff872cf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "guigui35PlatformBundle:Advert:form.html.twig"));
 
         // line 2
         echo "
@@ -28,10 +28,13 @@ class __TwigTemplate_03fd1c0733cb742417d405481a34255d08a554a913501db61077def6ae8
 ";
         // line 11
         echo "<div class=\"well\">
-  Ici se trouvera le formulaire.
+  ";
+        // line 12
+        echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form');
+        echo "
 </div>";
         
-        $__internal_b131c3128b9abdc95922dad4814a161b5a2480d3788b407cb0b797f3017f9580->leave($__internal_b131c3128b9abdc95922dad4814a161b5a2480d3788b407cb0b797f3017f9580_prof);
+        $__internal_91ba3405e10bbdce016f6fb5c38e539c190e539904564c38b37634eb6ff872cf->leave($__internal_91ba3405e10bbdce016f6fb5c38e539c190e539904564c38b37634eb6ff872cf_prof);
 
     }
 
@@ -40,9 +43,14 @@ class __TwigTemplate_03fd1c0733cb742417d405481a34255d08a554a913501db61077def6ae8
         return "guigui35PlatformBundle:Advert:form.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  30 => 11,  25 => 6,  22 => 2,);
+        return array (  33 => 12,  30 => 11,  25 => 6,  22 => 2,);
     }
 }
 /* {# src/OC/PlatformBundle/Resources/views/Advert/form.html.twig #}*/
@@ -56,5 +64,5 @@ class __TwigTemplate_03fd1c0733cb742417d405481a34255d08a554a913501db61077def6ae8
 /* {# On laisse vide la vue pour l'instant, on la comblera plus tard*/
 /*    lorsqu'on saura afficher un formulaire. #}*/
 /* <div class="well">*/
-/*   Ici se trouvera le formulaire.*/
+/*   {{ form(form) }}*/
 /* </div>*/

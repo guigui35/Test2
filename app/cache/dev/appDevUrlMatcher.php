@@ -130,7 +130,7 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             }
 
             // guigui35_platform_delete
-            if (0 === strpos($pathinfo, '/platform/delete') && preg_match('#^/platform/delete/(?P<id>\\)$#s', $pathinfo, $matches)) {
+            if (0 === strpos($pathinfo, '/platform/delete') && preg_match('#^/platform/delete/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
                 return $this->mergeDefaults(array_replace($matches, array('_route' => 'guigui35_platform_delete')), array (  '_controller' => 'guigui35\\PlatformBundle\\Controller\\AdvertController::deleteAction',));
             }
 
