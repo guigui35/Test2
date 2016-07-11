@@ -1,0 +1,39 @@
+guigui35_platform_home:
+    path:      /{page}
+    defaults:   
+        _controller: guigui35PlatformBundle:Advert:index 
+        page: 1
+    requirements: 
+        page: \d*
+    
+guigui35_platform_view:
+    path:      /advert/{id}
+    defaults:  { _controller: guigui35PlatformBundle:Advert:view }
+    requirements: 
+        id: \d+
+
+guigui35_platform_add:
+    path:      /add
+    defaults:  { _controller: guigui35PlatformBundle:Advert:add }
+
+guigui35_platform_edit:
+    path:      /edit/{id}
+    defaults:  { _controller: guigui35PlatformBundle:Advert:edit }
+    requirements:
+        id: \d+
+
+guigui35_platform_delete:
+    path:      /delete/{id}
+    defaults:  { _controller: guigui35PlatformBundle:Advert:delete }
+    requirements:
+        id: \
+
+        
+        
+        
+        
+        
+        
+        
+        
+        

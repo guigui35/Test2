@@ -1,0 +1,5 @@
+guigui35_platform:
+    resource: "@guigui35PlatformBundle/Resources/config/routing.yml"
+    prefix:   /platform
+    
+

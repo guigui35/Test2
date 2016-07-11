@@ -1,0 +1,46 @@
+{#{% extends "guigui35PlatformBundle::layout.html.twig" %}
+
+{% block title %}
+    Ajouter une annonce - {{ parent() }}
+{% endblock %}
+
+{% block guigui35platform_body %}
+
+  <h2>Ajouter une annonce</h2>
+
+  {{ include("guigui35PlatformBundle:Advert:form.html.twig") }}
+
+  <p>
+      Vous ajouter une annonce
+  </p>
+
+  <p>
+    <a href="{{ path('guigui35_platform_add', {'id': advert.id}) }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      Retour à l'annonce
+    </a>
+  </p>
+
+{% endblock %}
+
+#}
+
+{# src/Sdz/BlogBundle/Resources/views/Blog/modifier.html.twig #}
+
+{% extends "guigui35PlatformBundle::layout.html.twig" %}
+
+{% block title %}
+  Ajouter un article - {{ parent() }}
+{% endblock %}
+
+{% block guigui35platform_body %}
+
+  <h2>Ajouter un article</h2>
+
+  {{ include("guigui35PlatformBundle:Advert:form.html.twig") }}
+
+  <p>
+    Vous ajoutez un nouvel article.
+  </p>
+
+{% endblock %}
